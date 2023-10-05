@@ -7,13 +7,25 @@ type IOpcao = typeof filtros[0]
     label: string
 }*/
 
-export default function Filtros(){
+interface Props {
+    filtro: number | null;
+    setFiltro: React.Dispatch<React.SetStateAction<number | null>>;
+
+}
+
+export default function Filtros({filtro, setFiltro}: Props){
+    function selecionarFiltro(opcao: IOpcao){
+        return setFiltro(opcao.id);
+    }
 
     return(
 
         <div className={styles.filtro}>
             {filtros.map((opcao) =>(
-                <button className={styles.filtro__filtro} key={opcao.id}>
+                <button className={styles.filtro__filtro}  
+                key={opcao.id}
+                onClick={() => selecionarFiltro(opcao)}
+                >
                     {opcao.label}
                 </button>
             ))}
