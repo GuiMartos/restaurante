@@ -1,21 +1,21 @@
 [
     {
         "id": 1,
-        "label": "Rmédios"
+        "label": "Massas"
     },
 
     {
         "id": 2,
-        "label": "Genéricos"
+        "label": "Carnes"
     },
 
     {
         "id": 3,
-        "label": "Cosméticos"
+        "label": "Combos"
     },
 
     {
         "id": 4,
-        "label": "Vitaminas"
+        "label": "Veganos"
     }
 ]
