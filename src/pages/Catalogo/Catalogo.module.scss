@@ -16,7 +16,7 @@
 
 .header {
   align-items: center;
-  background-image: url("/assets/cardapio/header.png");
+  background-image: url("../../assets/catalogo/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -32,14 +32,15 @@
     padding: 0px $padding-horizontal-md;
   }
   &__text {
-    color: white;
+    color: rgb(0, 65, 102);
     font-size: 5rem;
     min-width: 400px;
     width: 40%;
+    font-weight: 800;
   }
 }
 
-.cardapio {
+.catalogo {
   padding: 50px $padding-horizontal;
   @media (max-width: $desktop_xsm) {
     padding: 50px $padding-horizontal-mobile;
